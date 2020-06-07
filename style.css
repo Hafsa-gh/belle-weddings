@@ -1,0 +1,333 @@
+
+    /* index.html */
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #333 !important;
+  }
+
+  .nav-link {
+    color: rgb(243, 235, 235) !important;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 40px !important;
+  }
+
+  .navbar-logo {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+  }
+
+/* Slider */
+
+.h-five {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.h-three {
+    font-weight: bold;
+    font-size: 32px;
+}
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* about */
+
+.h-two{
+  font-family: 'Times New Roman', Times, serif;
+  color: #3E2723;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
+.button {
+  border-radius: 8px;
+  background-color: #E53935;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:hover {
+  background-color: rgb(235, 69, 66);
+  color: white;
+}
+
+.icons {
+  padding: 50px;
+}
+
+.fa {
+  padding: 50px;
+}
+
+.linee {
+  font-size: 50px;
+}
+
+   /* wedding.html */
+   /* mehndi.html */
+   /* list.html */
+   /* packages.html */
+
+/* Our Gallery */
+
+.h-one {
+  font-weight: normal;
+  letter-spacing: 10px;
+}
+
+/* Wedding/Valima pictures */
+/* Mehendi/Dholki pictures */
+
+  .row1 {
+     display: flex;
+     padding: 10px;
+  }
+
+  .row2 {
+    display: flex;
+    padding: 10px;
+ }
+
+ .row3 {
+  display: flex;
+  padding: 10px;
+ }
+
+ .container {
+  position: relative;
+  width: 30%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 1px solid gray;
+  box-shadow: 5px 5px lightgrey;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+} 
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-weight: bold;
+}
+  
+/* list.html */
+
+/* List Of Food */
+
+.food-row1 {
+  display: flex;
+  padding: 50px;
+}
+
+.food-row2 {
+  display: flex;
+  padding: 50px;
+}
+
+.food-row3 {
+  display: flex;
+  padding: 50px;
+}
+
+.food-row4 {
+  display: flex;
+  padding: 50px;
+}
+
+/* packages.html */
+
+ul.abc {
+   list-style-type: circle;
+}
+
+hr.dashed {
+  border-top: 2px dashed rgb(138, 116, 116);
+}
+
+.card-deck {
+  padding: 54px;
+}
+
+.card-text{
+  padding-top: 70px;
+
+}
+
+hr.yellow {
+  border-top: 8px solid #debc34;
+  border-radius: 5px;
+}
+
+hr.green {
+  border-top: 8px solid green;
+  border-radius: 5px;
+}
+
+hr.blue {
+  border-top: 8px solid rgb(3, 131, 251);
+  border-radius: 5px;
+}
+
+hr.orange {
+  border-top: 8px solid rgb(235, 95, 45);
+  border-radius: 5px;
+}
+
+hr.pink {
+  border-top: 8px solid rgb(238, 96, 120);
+  border-radius: 5px;
+}
+
+hr.red {
+  border-top: 8px solid rgb(185, 35, 35);
+  border-radius: 5px;
+}
+
+
+
+/* .btn {
+  background-color: rgb(219, 169, 168);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(255, 109, 107);
+  color: black;
+} */
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+ .btn::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 0%;
+   background-color: rgb(233, 111, 40);
+   z-index: -1;
+   transition: 0.8s;
+ }
+
+ .btn1::before {
+   top: 0;
+   border-radius: 0 0 50% 50%;
+ }
+
+ .btn1::before {
+   height: 180%;
+ }
+
+ .btn1:hover::before {
+     height: 0%;
+ }
+
+
+/* about.html */
+
+.h-four {
+  text-align: center;
+}
+
+.icon-line {
+   font-size: 17px;
+   color: #3E2723;
+   padding: 50px;
+}
+
+
+.dot{
+  height: 22px;
+  width: 22px;
+  background-color: #3E2723;
+  border-radius: 50%;
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+
+/* contact.html */
+. card1 {
+      padding: 20px;
+}
